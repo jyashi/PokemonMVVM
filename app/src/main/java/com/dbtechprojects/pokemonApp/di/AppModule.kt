@@ -1,6 +1,6 @@
 package com.dbtechprojects.pokemonApp.di
 
-import android.content.Context
+import  android.content.Context
 import com.dbtechprojects.pokemonApp.api.PokeApi
 import com.dbtechprojects.pokemonApp.persistence.PokemonDao
 import com.dbtechprojects.pokemonApp.persistence.PokemonDatabase
@@ -39,6 +39,4 @@ object AppModule {
     @Singleton
     @Provides
     fun provideMainRepository(api: PokeApi, dao: PokemonDao): DefaultRepository = MainRepository(api, dao)
-
-
 }
